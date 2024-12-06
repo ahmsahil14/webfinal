@@ -55,7 +55,7 @@
 </head>
 
 <body class="manrope bg-primary-bg">
-    <header class="py-5 mb-16">
+    <header id="home" class="py-5 mb-16">
         <!-- Navbar -->
         <div class="navbar bg-base-100">
             <div class="navbar-start">
@@ -87,11 +87,11 @@
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1">
-                    <li><a class="text-xl text-black font-bold">Home</a></li>
-                    <li><a class="text-xl text-gray-500">Services</a></li>
-                    <li><a class="text-xl text-gray-500">Portfolio</a></li>
-                    <li><a class="text-xl text-gray-500">Blogs</a></li>
-                    <li><a class="text-xl text-gray-500">Contact Us</a></li>
+                    <li><a href="#home" class="text-xl text-black font-bold">Home</a></li>
+                    <li><a href="#services" class="text-xl text-gray-500">Services</a></li>
+                    <li><a href="#portfolio" class="text-xl text-gray-500">Portfolio</a></li>
+                    <li><a href="#reviews" class="text-xl text-gray-500">Blogs</a></li>
+                    <li><a href="#contact"class="text-xl text-gray-500">Contact Us</a></li>
                 </ul>
             </div>
             <div class="navbar-end gap-8 hidden lg:flex">
@@ -99,9 +99,9 @@
                     class="fa-solid fa-magnifying-glass bg-black text-white rounded-full text-2xl h-10 w-10 p-1 text-center"></i>
                 <i
                     class="fa-solid fa-cart-shopping bg-black text-white rounded-full text-2xl h-10 w-10 p-1 text-center"></i>
-                <button class="btn btn-hover text-xl bg-primary-greencolor border-none rounded-3xl p-2 font-bold">Book
-                    Consultant <i
-                        class="fa-solid fa-arrow-right bg-black text-white rounded-full text-2xl -rotate-45 h-8 w-8 text-center"></i></button>
+               <a href="bookconsult.html" target="_blank"> <button class="btn btn-hover text-xl bg-primary-greencolor border-none rounded-3xl p-2 font-bold">Book
+                Consultant <i
+                    class="fa-solid fa-arrow-right bg-black text-white rounded-full text-2xl -rotate-45 h-8 w-8 text-center"></i></button></a>
             </div>
         </div>
 
@@ -138,17 +138,17 @@
             <p class="text-lg md:text-xl text-gray-800 mb-6">
                 The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
             </p>
-            <button
+            <a href="aboutus.html" target="_blank"><button
                 class="text-lg md:text-xl font-bold bg-white text-primary-greencolor hover:bg-primary-greencolor hover:text-white border-none rounded-full py-3 px-8 shadow-lg transform transition-transform duration-300 hover:scale-105">
                 View Details
                 <i class="fa-solid fa-arrow-right bg-black text-white rounded-full text-2xl -rotate-45 h-8 w-8 text-center ml-2"></i>
-            </button>
+            </button</a>>
         </div>
     </header>
 
     <main>
         <!-- section 1 -->
-        <section class="mx-auto sm:w-full lg:px-72 bg-primary-bg">
+        <section id="services" class="mx-auto sm:w-full lg:px-72 bg-primary-bg">
             <img src="./assets/Vector.png" class="absolute mt-2 -rotate-60 mr-10 z-[-1]">
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-16 justify-center items-center py-16 px-4 sm:px-8">
@@ -193,7 +193,8 @@
                     <img src="assets/Rectangle.png" alt="Design" class="rounded-lg shadow-lg">
                 </div>
             </div>
-
+        </section>
+<section id="reviews">
            <!-- Stats Section -->
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 bg-white lg:px-20 sm:mx-auto md:mx-auto rounded-3xl gap-8 py-12 justify-center">
     <!-- Stat Card 1 -->
@@ -258,7 +259,7 @@
     </div>
 
     <!-- Work Process Cards Section -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mx-auto px-4 lg:px-16">
+    <div id="services" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mx-auto px-4 lg:px-16">
         <!-- Card 1: Concept -->
         <div class="card card-compact bg-base-100 w-full shadow-lg p-6 transition-transform hover:scale-105 hover:shadow-2xl bg-purple-200 rounded-xl">
             <figure class="flex justify-center mb-6">
@@ -308,7 +309,7 @@
 
 <!-- section 3 -->
  <!-- Portfolio Section -->
-<section class="py-16 bg-primary-bg">
+<section id="portfolio" class="py-16 bg-primary-bg">
     <div class="text-center mx-auto mb-12">
         <button class="mb-6 p-3 bg-primary-lightgreencolor rounded-3xl text-white hover:bg-primary-greencolor transition-all">
             <i class="fa-solid fa-arrow-right"></i> Explore Our Latest Works
@@ -516,12 +517,7 @@
   </div>
   
   <!-- Additional Animations (Optional) -->
-  <script>
-    // Smooth Scroll to Form on Button Click
-    document.querySelector(".bg-primary-lightgreencolor").addEventListener("click", function () {
-      document.querySelector("form").scrollIntoView({ behavior: "smooth" });
-    });
-  </script>
+ 
   
 
 
@@ -583,14 +579,14 @@
 
    <!-- Call to Action Button -->
 <div class="text-center">
-    <a href="#contact" class="inline-block bg-primary-greencolor text-white text-xl font-bold rounded-3xl py-3 px-8 transform hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out hover:bg-primary-darkgreen">
+    <a href="bookconsult.html" class="inline-block bg-primary-greencolor text-white text-xl font-bold rounded-3xl py-3 px-8 transform hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out hover:bg-primary-darkgreen" target="_blank">
         Book a Consultation <i class="fa-solid fa-arrow-right ml-2 bg-black text-white rounded-full text-2xl -rotate-45 p-1"></i>
     </a>
 </div>
 
 
     <!-- Footer Bottom -->
-    <div class="mt-12 text-center text-gray-500">
+    <div id="contact" class="mt-12 text-center text-gray-500">
         <p>&copy; 2024 Rinterio. All Rights Reserved.</p>
     </div>
 
